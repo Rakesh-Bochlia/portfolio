@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Selection color */
+  ::selection {
+    @apply bg-teal/20 text-teal;
+  }
+  ::-moz-selection {
+    @apply bg-teal/20 text-teal;
+  }
+
+  /* Default dark theme */
+  body {
+    @apply bg-darkbg text-offwhite;
+    font-family: var(--font-dm-sans), system-ui, sans-serif;
+  }
+  
+  /* Light theme overrides */
+  .light body {
+    @apply bg-lightbg text-darktext;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-plus-jakarta-sans), system-ui, sans-serif;
+  }
+  
+  /* Default dark theme */
+  section {
+    @apply bg-sectionbg;
+  }
+  
+  /* Light theme overrides */
+  .light section {
+    @apply bg-lightsection;
+  }
+  
+  /* Default dark theme */
+  section:nth-child(odd) {
+    @apply bg-darkbg;
+  }
+  
+  /* Light theme overrides */
+  .light section:nth-child(odd) {
+    @apply bg-lightbg;
+  }
+}
+
+/* Custom animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes floatReverse {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-float-reverse {
+  animation: floatReverse 3s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.animate-slide-up {
+  animation: slideUp 0.5s ease-out;
+}
+
+/* Menu animation */
+@keyframes menuReveal {
+  from { 
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.menu-item {
+  animation: menuReveal 0.5s ease-out forwards;
+  opacity: 0;
+}
+
+.menu-item:nth-child(1) { animation-delay: 0.1s; }
+.menu-item:nth-child(2) { animation-delay: 0.2s; }
+.menu-item:nth-child(3) { animation-delay: 0.3s; }
+.menu-item:nth-child(4) { animation-delay: 0.4s; }
+.menu-item:nth-child(5) { animation-delay: 0.5s; }
+.menu-item:nth-child(6) { animation-delay: 0.6s; }
+.menu-item:nth-child(7) { animation-delay: 0.7s; }
+
+/* Skill badge animations */
+.skill-badge:nth-child(odd) {
+  animation: float 3s ease-in-out infinite;
+}
+
+.skill-badge:nth-child(even) {
+  animation: floatReverse 3.5s ease-in-out infinite;
+}

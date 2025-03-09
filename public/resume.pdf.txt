@@ -1,0 +1,15 @@
+This is a placeholder file.
+
+In a production environment, replace this with an actual PDF resume file named "resume.pdf".
+
+The resume should include:
+- Contact information
+- Professional summary
+- Work experience
+- Education
+- Skills
+- Projects
+- Certifications
+- References (optional)
+
+Make sure the PDF is properly formatted and optimized for web viewing. 
