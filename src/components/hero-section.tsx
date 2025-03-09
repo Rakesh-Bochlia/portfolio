@@ -91,7 +91,7 @@ export function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <span className="block mb-2 text-xl text-teal">Hello, I'm</span>
+              <span className="block mb-2 text-xl text-teal">Hello, I am</span>
               RAKESH{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal to-coral">
                 KUMAR
@@ -104,7 +104,7 @@ export function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-              I'm a creative Frontend Developer specializing in crafting high-performance, interactive, and visually stunning websites & applications.
+              I am a creative Frontend Developer specializing in crafting high-performance, interactive, and visually stunning websites &amp; applications.
             </motion.p>
             
             <motion.div
@@ -118,7 +118,7 @@ export function HeroSection() {
                 className="inline-flex overflow-hidden relative justify-center items-center px-6 py-3 text-base font-medium bg-gradient-to-r rounded-full transition-all duration-300 group md:px-8 from-teal to-coral"
               >
                 <span className="absolute inset-0 transition-colors duration-300 bg-white/10 group-hover:bg-transparent" />
-                <span className="relative text-white">Let's Collaborate</span>
+                <span className="relative text-white">Let&apos;s Collaborate</span>
               </Link>
               
               <button

@@ -7,7 +7,7 @@ import { ProjectsSection } from "@/components/projects-section";
 import { ExperienceSection } from "@/components/experience-section";
 import { TestimonialsSection } from "@/components/testimonials-section";
 import { BlogSection } from "@/components/blog-section";
-import { ContactSection } from "@/components/contact-section";
+// import { ContactSection } from "@/components/contact-section";
 import { Footer } from "@/components/footer";
 import { ScrollToTop } from "@/components/scroll-to-top";
 
@@ -21,9 +21,9 @@ export default function Home() {
       <SkillsSection />
       <ProjectsSection />
       <ExperienceSection />
-      {/* <TestimonialsSection />
+      <TestimonialsSection />
       <BlogSection />
-      <ContactSection /> */}
+      {/* <ContactSection /> */}
       <Footer />
       <ScrollToTop />
     </main>

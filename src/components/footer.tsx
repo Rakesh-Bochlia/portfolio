@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { motion } from "framer-motion";
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
@@ -18,10 +17,10 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className={`${isDark ? 'bg-darkbg text-offwhite' : 'bg-white text-gray-900'}`}>
+    <footer className={`${isDark ? 'bg-darkbg text-offwhite' : 'text-gray-900 bg-white'}`}>
       {/* Main CTA Section */}
-      <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="text-center mb-16">
+      <div className="container px-4 py-20 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div className="mb-16 text-center">
           <h2 className={`text-4xl md:text-5xl lg:text-6xl font-bold mb-4 ${isDark ? 'text-offwhite' : 'text-gray-900'}`}>
             LET&apos;S BUILD SOMETHING
             <br />
@@ -29,18 +28,18 @@ export function Footer() {
           </h2>
           <Link
             href="#contact"
-            className="inline-flex items-center gap-2 text-lg font-medium text-teal hover:text-teal/80 transition-colors mt-8"
+            className="inline-flex gap-2 items-center mt-8 text-lg font-medium transition-colors text-teal hover:text-teal/80"
           >
             <span>START A PROJECT</span>
             <span className="text-2xl">→</span>
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-8">
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4 md:gap-8">
           {/* Logo and Social Links */}
           <div>
             <Link href="/" className="inline-block mb-6">
-              <span className="font-heading text-2xl font-bold">
+              <span className="text-2xl font-bold font-heading">
                 Rakesh Kumar
               </span>
             </Link>
@@ -141,14 +140,14 @@ export function Footer() {
 
       {/* Copyright */}
       <div className={`border-t ${isDark ? 'border-white/10' : 'border-gray-200'}`}>
-        <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div className="container px-4 py-6 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <p className={`text-sm text-center ${isDark ? 'text-offwhite/70' : 'text-gray-600'}`}>
             © {currentYear} All Rights Reserved | Designed & Developed by{" "}
             <a 
               href="https://github.com/yourusername" 
               target="_blank" 
               rel="noopener noreferrer"
-              className={`hover:text-teal/80 transition-colors text-sm`}
+              className={`text-sm transition-colors hover:text-teal/80`}
             >
               Rakesh Kumar
             </a>
