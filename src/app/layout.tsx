@@ -16,7 +16,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Rakesh Kumar | Frontend Developer",
+  title: "Rakesh Bochlia | Frontend Developer Portfolio",
   description: "Portfolio website of Rakesh Kumar, a Frontend Developer specializing in React, Next.js, and modern web technologies.",
 };
 
