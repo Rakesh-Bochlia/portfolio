@@ -20,6 +20,23 @@ export const metadata = {
   description: "Frontend Developer specializing in React, Next.js, JavaScript, Tailwind CSS and modern web applications.",
 };
 
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Person",
+      name: "Rakesh Bochlia",
+      jobTitle: "Frontend Developer",
+      image: "https://rakesh-bochlia-portfolio.netlify.app/images/rakesh-bochlia.jpg",
+      sameAs: [
+        "YOUR_LINKEDIN_URL",
+        "YOUR_INSTAGRAM_URL"
+      ]
+    }),
+  }}
+/>
+
 export default function RootLayout({
   children,
 }: Readonly<{
