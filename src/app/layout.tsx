@@ -15,28 +15,73 @@ const dmSans = DM_Sans({
   display: "swap",
 });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Rakesh Bochlia | Frontend Developer",
-  description: "Frontend Developer specializing in React, Next.js, JavaScript, Tailwind CSS and modern web applications.",
+  description:
+    "Frontend Developer with 2.5+ years of experience in React, Next.js, JavaScript, Tailwind CSS, Shopify and modern web development.",
+
+  keywords: [
+    "Rakesh Bochlia",
+    "Frontend Developer",
+    "React Developer",
+    "Next.js Developer",
+    "JavaScript Developer",
+    "Shopify Developer",
+    "Web Developer",
+  ],
+
+  authors: [
+    {
+      name: "Rakesh Bochlia",
+    },
+  ],
+
+  creator: "Rakesh Bochlia",
+
+  openGraph: {
+    title: "Rakesh Bochlia | Frontend Developer",
+    description:
+      "Frontend Developer specializing in React, Next.js, JavaScript, Tailwind CSS and modern web applications.",
+    url: "https://rakesh-bochlia-portfolio.netlify.app",
+    siteName: "Rakesh Bochlia Portfolio",
+    images: [
+      {
+        url: "https://rakesh-bochlia-portfolio.netlify.app/images/rakesh-bochlia.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Rakesh Bochlia Frontend Developer",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Rakesh Bochlia | Frontend Developer",
+    description:
+      "Frontend Developer specializing in React, Next.js, JavaScript, Tailwind CSS and modern web applications.",
+    images: [
+      "https://rakesh-bochlia-portfolio.netlify.app/images/rakesh-bochlia.jpg",
+    ],
+  },
 };
 
-<script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Person",
-      name: "Rakesh Bochlia",
-      jobTitle: "Frontend Developer",
-      image: "https://rakesh-bochlia-portfolio.netlify.app/images/rakesh-bochlia.jpg",
-      sameAs: [
-        "YOUR_LINKEDIN_URL",
-        "YOUR_INSTAGRAM_URL"
-      ]
-    }),
-  }}
-/>
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Rakesh Bochlia",
+  url: "https://rakesh-bochlia-portfolio.netlify.app",
+  image:
+    "https://rakesh-bochlia-portfolio.netlify.app/images/rakesh-bochlia.jpg",
+  jobTitle: "Frontend Developer",
 
+  sameAs: [
+    "https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME",
+    "https://www.instagram.com/rakeshbochlia/",
+    "https://github.com/YOUR-GITHUB-USERNAME",
+  ],
+};
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -47,6 +92,13 @@ export default function RootLayout({
       <body
         className={`${plusJakartaSans.variable} ${dmSans.variable} font-sans antialiased`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(personSchema),
+          }}
+        />
+
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
