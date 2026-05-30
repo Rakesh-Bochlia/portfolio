@@ -195,7 +195,7 @@ export function HeroSection() {
                 {/* Profile image */}
                 <Image
                   src="/images/user.png"
-                  alt="Rakesh Kumar - Frontend Developer"
+                  alt="Rakesh Bochlia Frontend Developer"
                   fill
                   className={`object-cover object-center ${isDark ? 'mix-blend-luminosity' : 'mix-blend-normal'} hover:mix-blend-normal transition-all duration-300`}
                   priority
