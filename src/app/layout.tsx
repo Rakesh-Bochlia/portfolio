@@ -15,9 +15,9 @@ const dmSans = DM_Sans({
   display: "swap",
 });
 
-export const metadata: Metadata = {
-  title: "Rakesh Bochlia | Frontend Developer Portfolio",
-  description: "Portfolio website of Rakesh Kumar, a Frontend Developer specializing in React, Next.js, and modern web technologies.",
+export const metadata = {
+  title: "Rakesh Bochlia | Frontend Developer",
+  description: "Frontend Developer specializing in React, Next.js, JavaScript, Tailwind CSS and modern web applications.",
 };
 
 export default function RootLayout({
