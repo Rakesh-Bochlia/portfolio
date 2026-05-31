@@ -94,7 +94,7 @@ export function HeroSection() {
               <span className="block mb-2 text-xl text-teal">Hello, I am</span>
               RAKESH{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal to-coral">
-                KUMAR
+                KUMAR mmmmm
               </span>
             </motion.h1>
             
